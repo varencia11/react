@@ -69,14 +69,18 @@ function CountdownTimer() {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '80vh', gap: 2, backgroundColor: "#ffe6f0" }}>
+    <Box sx={{ 
+            margin: 0,
+            padding: 0,
+            width: "100vw",
+            minHeight: "100vh", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '80vh', gap: 2, backgroundColor: "#ffe6f0" }}>
        <Typography 
   variant="h1" 
   sx={{ 
     color: "#000000", 
     fontSize: "3rem", 
     fontWeight: "bold", 
-    textAlign: "center" 
+    textAlign: "center",
   }}
 >
 ✈️ Countdown 👩🏻‍💻
@@ -86,7 +90,8 @@ function CountdownTimer() {
     fontSize: "8rem",
     position: "absolute", 
     top: "100%", 
-    left: "19%", 
+    left: "19%",
+    display: { xs: "none", sm: "block" }, 
   }}
 >
 🧚 
@@ -98,6 +103,7 @@ function CountdownTimer() {
           position: "absolute", 
           top: "100%", 
           right: "19%", 
+          display: { xs: "none", sm: "block" },
         }}
       >
         🍏  
@@ -109,6 +115,7 @@ function CountdownTimer() {
     position: "absolute", 
     top: "145%", 
     left: "73%", 
+    display: { xs: "none", sm: "block" },
   }}
 >
 🌼
@@ -120,6 +127,7 @@ function CountdownTimer() {
     position: "absolute", 
     top: "150%", 
     left: "19%", 
+    display: { xs: "none", sm: "block" },
   }}
 >
 📗 

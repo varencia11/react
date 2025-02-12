@@ -22,7 +22,10 @@ const Timer = memo(() => {
     <Container 
       maxWidth={false}
       sx={{ 
-        width: "100%", 
+        margin: 0,
+         padding: 0,
+        width: "100vw",
+        minHeight: "100vh", 
         height: "100vh", 
         display: "flex", 
         flexDirection: "column", 
@@ -30,7 +33,6 @@ const Timer = memo(() => {
         justifyContent: "center", 
         textAlign: "center",
         backgroundColor: "#ffe6f0", 
-        padding: "20px",
         position: "relative",
       }}
     >
@@ -56,6 +58,7 @@ const Timer = memo(() => {
           position: "absolute", 
           top: "20%", 
           right: "19%", 
+          display: { xs: "none", sm: "block" },
         }}
       >
         ✨ 
@@ -66,6 +69,7 @@ const Timer = memo(() => {
           position: "absolute", 
           top: "50%", 
           left: "19%", 
+          display: { xs: "none", sm: "block" },
         }}
       >
         ✨ 
@@ -76,6 +80,7 @@ const Timer = memo(() => {
           position: "absolute", 
           top: "14%", 
           left: "17%", 
+          display: { xs: "none", sm: "block" },
         }}
       >
         🌸
@@ -86,6 +91,7 @@ const Timer = memo(() => {
           position: "absolute", 
           top: "55%", 
           right: "22%", 
+          display: { xs: "none", sm: "block" },
         }}
       >
         🌻

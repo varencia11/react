@@ -1,4 +1,5 @@
 // src/App.tsx
+import "./styles.css";
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from './theme/theme';
 import Timer from './components/Timer';
